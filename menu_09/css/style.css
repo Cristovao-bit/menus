@@ -1,0 +1,55 @@
+/* 
+    Created on : 08/01/2019, 10:35:52
+    Author     : ML - Manutenção Lira
+*/
+
+.menu ul{
+    margin: 0;
+}
+
+.menu li{
+    padding: 15px;
+    position: relative;
+    width: 150px;
+    background-color: #34495e;
+    border-top: 1px solid #bdc3c7;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+    transition: 0.5s;
+}
+
+.menu li:hover{
+    background-color: #2ecc71;
+}
+
+.menu > ul > li{
+    border-right: 5px solid #f1c40f;
+}
+
+.menu ul ul{
+    transition: all 0.3s;
+    position: absolute;
+    border-left: 5px solid #f1c40f;
+    opacity: 0;
+    visibility: hidden;
+    left: 100%;
+    top: -2%;
+    margin-left: 8px;
+}
+
+.menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu li a{
+    color: #fff;
+    
+}
+
+.menu > ul > li:nth-of-type(2):after{
+    content: "+";
+    position: absolute;
+    margin-left: 30%;
+    color: #fff;
+    font-size: 20px;
+}

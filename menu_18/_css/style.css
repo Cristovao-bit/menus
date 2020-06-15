@@ -1,0 +1,60 @@
+/* 
+    Created on : 11/03/2019, 14:46:18
+    Author     : Manutenção Lira
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{background: #1abc9c;}
+
+.search_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    padding: 10px;
+}
+
+.input_box{
+    border: none;
+    outline: none;
+    background: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.4s all;
+    line-height: 40px;
+    width: 0;
+}
+
+.btn{
+    color: #1abc9c;
+    text-decoration: none;
+    float: right;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.search_box:hover .input_box{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search_box:hover .btn{
+    background: #fff;
+}

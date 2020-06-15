@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Open Sans', sans-serif;
+
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.radius{border-radius: 5%; -moz-border-radius: 5%; -webkit-border-radius: 5%;}
+.clear{clear: both;}
+
+header{
+	width: 100%;
+	background: #202c45;
+	padding: 0 50px;
+}
+
+header h1{
+	float: left;
+	padding: 15px 20px;
+}
+
+header h1 a{
+	color: #fff;
+	text-decoration: none;
+}
+
+header ul{
+	float: right;
+}
+
+header ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 30px 30px;
+	transition: .5s;
+}
+
+header li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+header ul li:hover{
+	background: #f2184f;
+}
+
+.responsive_bar{
+	width: 100%;
+	background: #202c45;
+	padding: 10px 30px;
+	display: none;
+}
+
+.responsive_bar h3{
+	padding: 3px 0;
+	color: #fff;
+	float: left;
+}
+
+.responsive_bar h3 a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.responsive_bar h4{
+	color: #fff;
+	float: right;
+	padding: 5px 10px;
+	background: #f2184f;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+@media (max-width: 900px){
+	header{
+		display: none;
+		padding: 0;
+	}
+	header .Brand{
+		display: none;
+	}
+	.responsive_bar{
+		display: block;
+	}
+	header h1{
+		display: block;
+		float: none;
+	}
+	header ul{
+		float: none;
+	}
+	header ul li{
+		display: block;
+		text-align: center;
+		background: #141e33;
+		padding: 15px 30px;
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+	}
+}

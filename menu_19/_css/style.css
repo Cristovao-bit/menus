@@ -1,0 +1,33 @@
+/* 
+    Created on : 11/03/2019, 17:04:35
+    Author     : Manutenção Lira
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+ul{list-style: none;}
+a{text-decoration: none;}
+
+.box-shadow{box-shadow: 0 2px 5px rgba(0,0,0,0.2); -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.2); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
+.text-shadow{text-shadow: 0 2px 5px rgba(0,0,0,0.2); -moz-text-shadow: 0 2px 5px rgba(0,0,0,0.2); -webkit-text-shadow: 0 2px 5px rgba(0,0,0,0.2);}
+
+.main_container{width: 100%;}
+.main_menu{max-width: 1200px; margin: 20px auto; padding: 15px; background: #000; display: flex; flex-wrap: wrap; justify-content: space-between; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.main_menu ul{display: flex;}
+.main_menu ul li{padding: 10px 15px; font-weight: bold;}
+.main_menu ul li a{color: #fff; border: 1px solid transparent; font-size: 0.9em; transition: 0.5s all;}
+.main_menu ul li a:hover{color: #fbc02d; padding-bottom: 2px; border-bottom: 1px solid #fbc02d;}
+.main_menu .main_search{height: 40px; margin: auto 15px; background: #555; border-radius: 40px; -moz-border-radius: 40px; -webkit-border-radius: 40px;}
+.main_menu .main_search .search{width: 0; padding: 0; border: none; font-size: 0.9em; color: #fff; background: none; transition: 0.5s all;}
+.main_menu .main_search .search.active{width: 240px; padding: 0 15px;}
+.main_menu .main_search .search::placeholder{color: rgba(255,255,255,0.3);}
+.main_menu .main_search .btn_search{width: 40px; height: 40px; padding: 10px; line-height: 40px; color: #fff; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%;}
+

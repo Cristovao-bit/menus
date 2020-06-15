@@ -1,0 +1,144 @@
+/* 
+    Created on : 07/01/2019, 19:45:47
+    Author     : ML - Manutenção Lira
+*/
+
+.menu_principal{
+    display: inline-block;
+    width: 100%;
+    height: 74px;
+    background: #fff;
+    border-bottom: 1px solid #000;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+    
+}
+
+.menu_principal li{
+    float: right;
+    margin: 25px 10px;
+}
+
+.menu_principal li a{
+    color: #000;
+    padding: 10px 10px;
+    text-shadow: 1px 1px rgba(255,255,255,0.5);
+    -moz-text-shadow: 1px 1px rgba(255,255,255,0.5);
+    -webkit-text-shadow: 1px 1px rgba(255,255,255,0.5);
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.menu_principal li a:hover{
+    color: #b71c1c;
+    border: 1px solid #b71c1c;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.menu_sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #c62828;
+    border-right: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+.menu_sidebar.active{
+    left: 0;
+}
+
+.menu_sidebar .menu_logo{
+    max-width: 100%;
+    font-size: 0.875em;
+    padding: 10px 10px;
+    border-bottom: 1px solid #333;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.menu_sidebar .menu_logo img{
+    width: 140px;
+    margin: 10px 35px;
+}
+
+.menu_sidebar_config li a{
+    display: block;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    transition: 0.5s;
+}
+
+.menu_sidebar_config li a:hover{
+    color: #fff;
+    background: #b71c1c;
+    border-left: 2px solid #fff;
+}
+
+.menu_sidebar_config .icon.left{
+    float: left;
+    margin-right: 10px;
+}
+
+.menu_sidebar_config .icon.right{
+    float: right;
+    margin-left: 10px;
+}
+
+.menu_sidebar_config li ul{
+    display: none;
+}
+
+.menu_sidebar_config li ul li a{
+    color: #fff;
+    background: #424242;
+    transition: 0.5s;
+}
+
+.menu_sidebar_config li ul li a:hover{
+    background: #e53935;
+}
+
+.menu_sidebar_config .active > a{
+    color: #fff;
+    background: #b71c1c;
+}
+
+.menu_sidebar_logout li a{
+    display: block;
+    color: #fff;
+    top: 25px;
+    padding: 12px 20px;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.menu_sidebar_logout li a:hover{
+    color: #fff;
+    background: #b71c1c;
+    border-left: 2px solid #fff;
+}
+
+.sidebar_btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    top: 8px;
+    right: -50px;
+    color: #000;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sidebar_btn:hover{
+    color: #b71c1c;
+}

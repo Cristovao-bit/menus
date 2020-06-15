@@ -1,0 +1,53 @@
+/* 
+    Created on : 05/01/2019, 18:45:19
+    Author     : ML - Manutenção Lira
+*/
+
+.main_header{
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    height: 120px;
+    background: #0097a7;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+}
+
+.main_logo{
+    float: left;
+    margin-right: 30%;
+}
+
+.main_menu li{
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+}
+
+.main_menu li a{
+    font-size: 0.875em;
+    font-weight: 500;
+    margin: 0 5px 0 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #000;
+    transition: 0.5s;
+    border: 1px solid transparent;
+}
+
+.main_menu .active{
+    color: #b71c1c;
+    border: 1px solid #b71c1c;
+}
+
+.main_menu .active:hover{
+    color: #fff;
+    background: #b71c1c;
+    border: 1px solid #b71c1c;
+}
+
+.main_menu li a:hover{
+    color: #b71c1c;
+    border: 1px solid #b71c1c;
+}
